@@ -30,7 +30,7 @@ const Home = () => {
   const processedMovies = movies.map((movie) => ({
     id: movie.id,
     posterUrl: `https://image.tmdb.org/t/p/w500${movie.poster_path}`,
-    detailUrl: `/movies1/${movie.id}`,
+    detailUrl: `/movies/${movie.id}`,
     title: movie.original_title,
 		
   }));

@@ -45,11 +45,10 @@ function App() {
         <Route path="/" element={<Home />} />
         <Route path="/about" element={<AboutView />} />
         <Route path="/search" element={<SearchView keyword={searchText} searchResults={searchResults} />} />
-        <Route path="/movies1/:id" element={<MovieDetails />} />
+        <Route path="/movies/:id" element={<MovieDetails />} />
         <Route path="*" element={<PageNotFound />} />
       </Routes>
       <Footer />
-      
     </>
   );
 }
